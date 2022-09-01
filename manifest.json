@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Open in VSCode",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Clone and open git repos from GitHub in VS Code.",
   "icons": {
     "32": "icons/vscode.svg",

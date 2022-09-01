@@ -11,7 +11,7 @@ function getRepoURL() {
 
 function insertVSCodeBtn() {
   const vscodeAnchor = document.createElement("a");
-  vscodeAnchor.className = "btn mr-2 d-none d-md-block";
+  vscodeAnchor.className = "btn ml-2 d-none d-md-block";
   vscodeAnchor.href = "#";
   vscodeAnchor.onclick = function (event) {
     const tmpA = document.createElement("a");
@@ -30,9 +30,11 @@ function insertVSCodeBtn() {
   vscodeAnchor.appendChild(vscodeImg);
 
   try {
-    const greenCodeBtn = document.querySelector(
-      "span.d-none:nth-last-child(1) > get-repo:nth-last-child(1)"
+    const fileNavigation = document.querySelector(
+      ".file-navigation"
     );
+    const greenCodeBtn = fileNavigation.children[fileNavigation.childElementCount-2];
+    console.log(greenCodeBtn);
     greenCodeBtn.insertAdjacentElement("beforebegin", vscodeAnchor);
     clearInterval(vscodeBtnInserter);
   } catch (error) {}
