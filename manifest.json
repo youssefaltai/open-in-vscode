@@ -3,7 +3,7 @@
   "name": "Open in VSCode",
   "version": "1.0",
 
-  "description": "Allows you to clone and open GitHub git repositories in VS Code.",
+  "description": "Clone and open git repos from GitHub in VS Code.",
 
   "icons": {
     "48": "icons/vscode.svg",
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*/*"],
-      "js": ["vscodebtn.js"]
+      "js": ["openInVSCode.js"]
     }
   ]
 }
