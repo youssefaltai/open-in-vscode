@@ -10,8 +10,6 @@ function getRepoURL() {
 }
 
 function insertVSCodeBtn() {
-  console.log("INSERTING VSCODE BTN");
-
   const vscodeAnchor = document.createElement("a");
   vscodeAnchor.className = "btn mr-2 d-none d-md-block";
   vscodeAnchor.href = "#";
