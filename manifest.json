@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Open in VSCode",
+  "version": "1.0",
+
+  "description": "Allows you to clone and open GitHub git repositories in VS Code.",
+
+  "icons": {
+    "48": "icons/vscode.svg",
+    "96": "icons/vscode.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*/*"],
+      "js": ["vscodebtn.js"]
+    }
+  ]
+}
