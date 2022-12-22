@@ -4,14 +4,16 @@ function getRepoURL() {
   const currentURL = window.location.href;
   const [protocol, usernamePlusRepo] = currentURL.split("github.com");
   const [_, username, reponame] = usernamePlusRepo.split("/");
-  return `https%3A%2F%2Fgithub.com%2F${username}%2F${reponame.split("#")[0]}.git`;
+  return `https%3A%2F%2Fgithub.com%2F${username}%2F${
+    reponame.split("#")[0]
+  }.git`;
 }
 
 function insertVSCodeBtn() {
   console.log("INSERTING VSCODE BTN");
 
   const vscodeAnchor = document.createElement("a");
-  vscodeAnchor.className = "btn mr-2 d-none d-md-block";
+  vscodeAnchor.className = "btn ml-2 d-none d-md-block";
   vscodeAnchor.href = "#";
   vscodeAnchor.onclick = function (event) {
     const tmpA = document.createElement("a");
@@ -30,13 +32,10 @@ function insertVSCodeBtn() {
   vscodeAnchor.appendChild(vscodeImg);
 
   try {
-    const codeBtn = document.querySelector(
-      "span.d-none:nth-child(7) > get-repo:nth-child(2)"
+    const addFileBtn = document.querySelector(
+      "details.details-overlay:nth-child(6)"
     );
-    codeBtn.insertAdjacentElement("beforebegin", vscodeAnchor);
+    addFileBtn.insertAdjacentElement("afterend", vscodeAnchor);
     clearInterval(vscodeBtnInserter);
-    console.log("VSCODE BTN INSERTED");
-  } catch (error) {
-    console.log("The green code button has not loaded yet");
-  }
+  } catch (error) {}
 }
