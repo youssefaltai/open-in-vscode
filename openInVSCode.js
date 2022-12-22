@@ -13,7 +13,7 @@ function insertVSCodeBtn() {
   console.log("INSERTING VSCODE BTN");
 
   const vscodeAnchor = document.createElement("a");
-  vscodeAnchor.className = "btn ml-2 d-none d-md-block";
+  vscodeAnchor.className = "btn mr-2 d-none d-md-block";
   vscodeAnchor.href = "#";
   vscodeAnchor.onclick = function (event) {
     const tmpA = document.createElement("a");
@@ -32,10 +32,10 @@ function insertVSCodeBtn() {
   vscodeAnchor.appendChild(vscodeImg);
 
   try {
-    const addFileBtn = document.querySelector(
-      "details.details-overlay:nth-child(6)"
+    const greenCodeBtn = document.querySelector(
+      "span.d-none:nth-last-child(1) > get-repo:nth-last-child(1)"
     );
-    addFileBtn.insertAdjacentElement("afterend", vscodeAnchor);
+    greenCodeBtn.insertAdjacentElement("beforebegin", vscodeAnchor);
     clearInterval(vscodeBtnInserter);
   } catch (error) {}
 }
