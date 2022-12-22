@@ -10,6 +10,8 @@ function getRepoURL() {
 }
 
 function insertVSCodeBtn() {
+  console.log("INSERTING VSCODE BTN");
+
   const vscodeAnchor = document.createElement("a");
   vscodeAnchor.className = "btn mr-2 d-none d-md-block";
   vscodeAnchor.href = "#";
@@ -31,7 +33,7 @@ function insertVSCodeBtn() {
 
   try {
     const greenCodeBtn = document.querySelector(
-      "span.d-none:nth-child(6) > get-repo:nth-last-child(1)"
+      "span.d-none:nth-last-child(1) > get-repo:nth-last-child(1)"
     );
     greenCodeBtn.insertAdjacentElement("beforebegin", vscodeAnchor);
     clearInterval(vscodeBtnInserter);
