@@ -6,8 +6,11 @@
   "description": "Clone and open git repos from GitHub in VS Code.",
 
   "icons": {
+    "32": "icons/vscode.svg",
     "48": "icons/vscode.svg",
-    "96": "icons/vscode.svg"
+    "64": "icons/vscode.svg",
+    "96": "icons/vscode.svg",
+    "128": "icons/vscode.svg"
   },
 
   "content_scripts": [
