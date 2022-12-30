@@ -22,7 +22,7 @@ function insertVSCodeBtn() {
 
   const vscodeImg = document.createElement("img");
   vscodeImg.alt = "VS Code";
-  vscodeImg.src = "https://www.svgrepo.com/show/374171/vscode.svg";
+  vscodeImg.src = "https://raw.githubusercontent.com/youssef-attai/open-in-vscode/main/icons/vscode.svg";
   vscodeImg.style = "vertical-align:text-top";
   vscodeImg.width = "18";
   vscodeImg.height = "18";
