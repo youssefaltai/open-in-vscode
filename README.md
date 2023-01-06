@@ -1,6 +1,6 @@
 # Open in VS Code
 
-Clone and open git repos from GitHub in VS Code.
+Easily clone and open git repos from GitHub in VS Code. 
 
 ### Get the extension
 
