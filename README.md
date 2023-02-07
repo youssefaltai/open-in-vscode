@@ -1,6 +1,7 @@
 # Open in VS Code
 
-Easily clone and open git repos from GitHub in VS Code. 
+This browser extension adds an "Open in VS Code" button in GitHub repository pages.
+Clicking this button opens VS Code (if installed) and automatically clones the repo for you.
 
 ### Get the extension
 
