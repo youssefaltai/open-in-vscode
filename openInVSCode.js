@@ -11,7 +11,7 @@ function getRepoURL() {
 
 function insertVSCodeBtn() {
   const vscodeAnchor = document.createElement("a");
-  vscodeAnchor.className = "btn ml-2 d-none d-md-block";
+  vscodeAnchor.className = "btn ml-1 d-none d-md-block";
   vscodeAnchor.href = "#";
   vscodeAnchor.onclick = function (event) {
     const tmpA = document.createElement("a");
@@ -22,7 +22,8 @@ function insertVSCodeBtn() {
 
   const vscodeImg = document.createElement("img");
   vscodeImg.alt = "VS Code";
-  vscodeImg.src = "https://raw.githubusercontent.com/youssef-attai/open-in-vscode/main/icons/vscode.svg";
+  vscodeImg.src =
+    "https://raw.githubusercontent.com/youssef-attai/open-in-vscode/main/icons/vscode.svg";
   vscodeImg.style = "vertical-align:text-top";
   vscodeImg.width = "18";
   vscodeImg.height = "18";
@@ -30,11 +31,11 @@ function insertVSCodeBtn() {
   vscodeAnchor.appendChild(vscodeImg);
 
   try {
-    const fileNavigation = document.querySelector(
-      ".file-navigation"
-    );
-    const greenCodeBtn = fileNavigation.children[fileNavigation.childElementCount-2];
+    const greenCodeBtn =
+      document.getElementById(":r5:") ?? document.getElementById(":r1:");
+
     console.log(greenCodeBtn);
+
     greenCodeBtn.insertAdjacentElement("beforebegin", vscodeAnchor);
     clearInterval(vscodeBtnInserter);
   } catch (error) {}
