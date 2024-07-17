@@ -32,7 +32,7 @@ function insertVSCodeBtn() {
 
   try {
     const greenCodeBtn =
-      document.getElementById(":r5:") ?? document.getElementById(":r1:");
+      document.getElementById(":R55ab:") ?? document.getElementById(":r1:");
 
     console.log(greenCodeBtn);
 
