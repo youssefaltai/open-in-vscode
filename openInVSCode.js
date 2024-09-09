@@ -27,8 +27,9 @@ function insertVSCodeBtn() {
   vscodeImg.style = "vertical-align:text-top";
   vscodeImg.width = "18";
   vscodeImg.height = "18";
+  //newwwwwwwwww
+  vscodeAnchor.appendChild(vscodeImg    );
 
-  vscodeAnchor.appendChild(vscodeImg);
 
   try {
     const greenCodeBtn =
@@ -40,3 +41,4 @@ function insertVSCodeBtn() {
     clearInterval(vscodeBtnInserter);
   } catch (error) {}
 }
+
